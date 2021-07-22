@@ -1,0 +1,43 @@
+<div>
+  <form [formGroup]="contactForm" (submit)="submitForm()">
+    <div>
+
+      <label for="name">Name</label>
+      <input formControlName="myName" id="name" type="text">
+      <span *ngIf="submitted && contactForm.controls.myName.errors">Name is required and need to be more than 2 characters and less than 14 characters </span>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input formControlName="email" id="email" type="text">
+      <span *ngIf="submitted && contactForm.controls.email.errors">Email is required</span>
+    </div>
+
+    <div>
+      <label for="gender">Gender</label>
+      <select formControlName="gender" id="gender" type="text">
+        <option value="M">Male</option>
+        <option value="w">Women</option>
+        <option value="O">Other</option>
+      </select>
+      <span *ngIf="submitted && contactForm.controls.gender.errors"> Gender is required </span>
+    </div>
+
+    <div>
+      <label for="age">Age</label>
+      <input formControlName="age" id="age" type="number">
+      <span *ngIf="submitted && contactForm.controls.age.errors">Age is required and need to be more than 18 numbers </span>
+    </div>
+
+    <div>
+        <label for="description">Description</label>
+        <textarea formControlName="description" id="description"></textarea>
+        <span *ngIf="submitted && contactForm.controls.description.errors">Description is required and need to be more than 10 characters and less than 244 characters </span>
+      </div>
+
+    <div>
+      <button>Enviar</button>
+    </div>
+
+  </form>
+</div>

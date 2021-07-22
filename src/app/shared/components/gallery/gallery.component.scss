@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+.c-gallery {
+
+  &__img {
+    border-radius: 50%;
+    border: 3px solid black;
+padding: 0;  }
+
+  &__text {
+    text-align: center;
+    // @include media-breakpoint-(lg){
+    //     color: blue;
+    // }
+  }
+}

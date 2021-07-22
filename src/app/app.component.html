@@ -1,0 +1,10 @@
+
+<label class="c-label">
+    <select #langSelect (change)="changeLang (langSelect.value)">
+        <option *ngFor="let lang of langs" [value]="lang">
+            {{ lang }}
+        </option>
+    </select>
+</label>
+<app-header></app-header>
+<router-outlet></router-outlet>

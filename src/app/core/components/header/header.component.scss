@@ -1,0 +1,31 @@
+
+.c-header {
+  display: flex;
+  justify-content: center;
+  
+  &__link {
+    background-color: transparent;
+    border: 4px solid #bbf6ff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: #333;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    &--active {
+      background-color: #11B0C8;
+    }
+  }
+  &__title {
+      text-align: center;
+      font-size: 80px;
+  }
+  &__nav {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+  }
+  
+}
